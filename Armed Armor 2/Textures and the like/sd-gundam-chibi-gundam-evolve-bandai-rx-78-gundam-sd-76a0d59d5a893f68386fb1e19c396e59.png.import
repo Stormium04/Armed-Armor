@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://ckfr0reum1r87"
+path="res://.godot/imported/sd-gundam-chibi-gundam-evolve-bandai-rx-78-gundam-sd-76a0d59d5a893f68386fb1e19c396e59.png-069010a4c936b6ddd050f69f10a3262f.ctex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Textures and the like/sd-gundam-chibi-gundam-evolve-bandai-rx-78-gundam-sd-76a0d59d5a893f68386fb1e19c396e59.png"
+dest_files=["res://.godot/imported/sd-gundam-chibi-gundam-evolve-bandai-rx-78-gundam-sd-76a0d59d5a893f68386fb1e19c396e59.png-069010a4c936b6ddd050f69f10a3262f.ctex"]
+
+[params]
+
+compress/mode=0
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=false
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=1

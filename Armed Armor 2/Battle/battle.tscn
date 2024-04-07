@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://g3p4rg3n27e3"]
+
+[ext_resource type="Script" path="res://Battle/Character.gd" id="1_07j24"]
+[ext_resource type="Texture2D" uid="uid://m3gbblsrscqe" path="res://Textures and the like/celestial-being-aeolia-schenberg-gundam-logo-anime-rider-9979486b4085734cf1b8e69c94efa55e.png" id="2_4p76l"]
+[ext_resource type="Texture2D" uid="uid://cf8qo8km47wek" path="res://Textures and the like/gn-001-gundam-exia-deviantart-gn001-gundam-exia-e5b7e6bc091185568717a67c9cb0272b.png" id="3_f0lrf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e13p3"]
+bg_color = Color(0.00392157, 0.00392157, 0.00392157, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rm4ja"]
+bg_color = Color(0.2, 0.694118, 0.537255, 1)
+
+[node name="Character" type="CharacterBody2D"]
+script = ExtResource("1_07j24")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(102.161, 82.7188)
+scale = Vector2(0.209487, 0.220386)
+texture = ExtResource("3_f0lrf")
+
+[node name="focus" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(77, 18)
+scale = Vector2(0.01401, 0.0150506)
+texture = ExtResource("2_4p76l")
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_left = 195.0
+offset_top = 162.0
+offset_right = 358.0
+offset_bottom = 196.0
+rotation = -1.5708
+theme_override_styles/background = SubResource("StyleBoxFlat_e13p3")
+theme_override_styles/fill = SubResource("StyleBoxFlat_rm4ja")
+value = 90.0
+show_percentage = false

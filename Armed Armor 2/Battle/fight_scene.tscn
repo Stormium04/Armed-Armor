@@ -1,0 +1,80 @@
+[gd_scene load_steps=11 format=3 uid="uid://uamqm7t18mal"]
+
+[ext_resource type="PackedScene" uid="uid://dtxbq1opb0mo0" path="res://Battle/enemy_group.tscn" id="1_28xbk"]
+[ext_resource type="Texture2D" uid="uid://bw07qq1ld8tiy" path="res://Textures and the like/battleback1.png" id="1_r66qc"]
+[ext_resource type="PackedScene" uid="uid://b3f5wrr1cecyb" path="res://Battle/player_group.tscn" id="3_gufrs"]
+[ext_resource type="FontFile" uid="uid://dl2wx0weohhjw" path="res://Textures and the like/NESCyrillic.ttf" id="4_gt2fv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jqvss"]
+bg_color = Color(0.780392, 0, 0.611765, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_50ak0"]
+bg_color = Color(0, 0.717647, 0.356863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kvhag"]
+bg_color = Color(0, 0.654902, 0.866667, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2uwac"]
+bg_color = Color(0.0784314, 0.611765, 0.305882, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ragcn"]
+bg_color = Color(1, 0.352941, 0.172549, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_57ctp"]
+bg_color = Color(1, 1, 1, 1)
+
+[node name="fight" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_top = -1.0
+offset_right = 1154.0
+offset_bottom = 649.0
+texture = ExtResource("1_r66qc")
+expand_mode = 1
+
+[node name="EnemyGroup" parent="." instance=ExtResource("1_28xbk")]
+position = Vector2(7, 16)
+
+[node name="Player Group" parent="." instance=ExtResource("3_gufrs")]
+position = Vector2(234, 21)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Choice" type="VBoxContainer" parent="CanvasLayer"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -102.0
+offset_top = -72.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Attack" type="Button" parent="CanvasLayer/Choice"]
+layout_mode = 2
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_gt2fv")
+theme_override_styles/hover = SubResource("StyleBoxFlat_jqvss")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_50ak0")
+text = "Attack"
+
+[node name="Defend" type="Button" parent="CanvasLayer/Choice"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0, 0.721569, 0.717647, 1)
+theme_override_fonts/font = ExtResource("4_gt2fv")
+theme_override_styles/hover = SubResource("StyleBoxFlat_kvhag")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_2uwac")
+text = "Defend"
+
+[node name="Run" type="Button" parent="CanvasLayer/Choice"]
+layout_mode = 2
+theme_override_colors/font_pressed_color = Color(0.188235, 0.498039, 0.823529, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_gt2fv")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ragcn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_57ctp")
+text = "Run"
+
+[connection signal="pressed" from="CanvasLayer/Choice/Attack" to="EnemyGroup" method="_on_attack_pressed"]
