@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bv1ul1qynrdwd"]
+
+[ext_resource type="Script" path="res://AAGrid/Cursor/Cursor.gd" id="1"]
+[ext_resource type="Resource" uid="uid://cm00eac5a0nho" path="res://GameBoard/Grid.tres" id="3"]
+[ext_resource type="Texture2D" uid="uid://bp40wk1ticocm" path="res://AAGrid/Cursor/cursor.png" id="4_o102x"]
+
+[node name="Cursor" type="Node2D"]
+self_modulate = Color(1, 1, 1, 0)
+script = ExtResource("1")
+grid = ExtResource("3")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(1.7, 1.7)
+texture = ExtResource("4_o102x")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true

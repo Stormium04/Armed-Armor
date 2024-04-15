@@ -1,0 +1,7 @@
+Button
+Sprite2D
+Node2D
+TileMap
+AnimationPlayer
+PathFollow2D
+Path2D

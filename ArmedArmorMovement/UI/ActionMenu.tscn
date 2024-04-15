@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgukd14xdcm"]
+
+[ext_resource type="Texture2D" uid="uid://b1ux6aofq23ui" path="res://ActionMenuTemp.png" id="1_3mytn"]
+
+[node name="ActionMenu" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0.486275)
+texture = ExtResource("1_3mytn")
+
+[node name="Button" type="Button" parent="Sprite2D"]
+offset_left = -48.0
+offset_top = -54.0
+offset_right = 48.0
+offset_bottom = -23.0
+text = "Move"
+
+[node name="Button2" type="Button" parent="Sprite2D"]
+offset_left = -48.0
+offset_top = -16.0
+offset_right = 48.0
+offset_bottom = 15.0
+text = "Attack"
+
+[node name="Button3" type="Button" parent="Sprite2D"]
+offset_left = -48.0
+offset_top = 21.0
+offset_right = 48.0
+offset_bottom = 52.0
+text = "Do Nothing
+"
