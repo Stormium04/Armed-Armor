@@ -1,20 +1,12 @@
+res://Main.tscn
 res://UnitOverlay/unit_overlay_tileset.tres
 res://GameBoard/unit_path_tileset.tres
-res://AAGrid/AAGrid.tres
-res://AAUnits/AAUnit.tscn
-res://Main.tscn
+res://AAMain.tscn
 res://Background/Map.tscn
 res://UnitOverlay/UnitOverlay.tscn
-res://Units/Unit.tscn
-res://AAMain.tscn
-res://AAGrid/AAMap.tscn
-res://AAUnits/AAUnit.gd
-res://AAGrid/Cursor/AACursor.tscn
-res://GameBoard/Cursor/Cursor.tscn
-res://GameBoard/GameBoard.gd
 res://AAGrid/Cursor/Cursor.tscn
 res://AAGrid/Unit Path/UnitPath.tscn
-res://GameBoard/UnitPath.tscn
-res://AAGrid/Unit Path/ArmedArmorUnitPath.tres
-res://GameBoard/Grid.tres
 res://UI/ActionMenu.tscn
+res://Camera.gd
+res://GameBoard/Grid.tres
+res://AAGrid/Cursor/Cursor.gd
