@@ -48,6 +48,10 @@ var is_selected := false:
 			_anim_player.play("selected")
 		else:
 			_anim_player.play("idle")
+			
+var move_pressed := false:
+	set(value):
+		move_pressed = value
 
 var _is_walking := false:
 	set(value):
@@ -60,6 +64,7 @@ var _is_walking := false:
 
 
 func _ready() -> void:
+	
 	set_process(false)
 	_path_follow.rotates = false
 
@@ -73,16 +78,17 @@ func _ready() -> void:
 
 
 func _process(delta: float) -> void:
-	_path_follow.progress += move_speed * delta
+	if move_pressed == true:
+		_path_follow.progress += move_speed * delta
 
-	if _path_follow.progress_ratio >= 1.0:
-		_is_walking = false
-		# Setting this value to 0.0 causes a Zero Length Interval error
-		_path_follow.progress = 0.00001
-		position = grid.calculate_map_position(cell)
-		curve.clear_points()
-		emit_signal("walk_finished")
-
+		if _path_follow.progress_ratio >= 1.0:
+			_is_walking = false
+			# Setting this value to 0.0 causes a Zero Length Interval error
+			_path_follow.progress = 0.00001
+			position = grid.calculate_map_position(cell)
+			curve.clear_points()
+			emit_signal("walk_finished")
+			move_pressed = false
 
 ## Starts walking along the `path`.
 ## `path` is an array of grid coordinates that the function converts to map coordinates.
@@ -95,3 +101,15 @@ func walk_along(path: PackedVector2Array) -> void:
 		curve.add_point(grid.calculate_map_position(point) - position)
 	cell = path[-1]
 	_is_walking = true
+
+
+func _on_attack_pressed():
+	pass # Replace with function body.
+
+
+func _on_move_pressed():
+	move_pressed = true # Replace with function body.
+
+
+func _on_close_pressed():
+	is_selected = false # Replace with function body.

@@ -1,4 +1,5 @@
 res://Main.tscn
+res://GameBoard/Grid.tres
 res://UnitOverlay/unit_overlay_tileset.tres
 res://GameBoard/unit_path_tileset.tres
 res://AAMain.tscn
@@ -6,7 +7,9 @@ res://Background/Map.tscn
 res://UnitOverlay/UnitOverlay.tscn
 res://AAGrid/Cursor/Cursor.tscn
 res://AAGrid/Unit Path/UnitPath.tscn
-res://UI/ActionMenu.tscn
-res://Camera.gd
-res://GameBoard/Grid.tres
-res://AAGrid/Cursor/Cursor.gd
+res://Units/Unit.tscn
+res://Menu.tscn
+res://TextureRect.gd
+res://AAUnits/AAUnit.gd
+res://UnitOverlay/Menu.tscn
+res://AAUnits/Unit.tscn

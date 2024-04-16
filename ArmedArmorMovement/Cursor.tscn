@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://irxlrndabrlb"]
+
+[ext_resource type="Texture2D" uid="uid://bjitqkw36qnci" path="res://pngwing.com.png" id="1_uil6b"]
+[ext_resource type="Script" path="res://TextureRect.gd" id="2_c6sgc"]
+
+[node name="Cursor" type="TextureRect"]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.0955575, 0.0930709)
+texture = ExtResource("1_uil6b")
+script = ExtResource("2_c6sgc")
