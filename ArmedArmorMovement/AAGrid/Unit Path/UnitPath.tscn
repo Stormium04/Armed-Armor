@@ -5,6 +5,7 @@
 [ext_resource type="Resource" uid="uid://cm00eac5a0nho" path="res://GameBoard/Grid.tres" id="3"]
 
 [node name="UnitPath" type="TileMap"]
+texture_filter = 1
 tile_set = ExtResource("2")
 format = 2
 script = ExtResource("2_ybwix")

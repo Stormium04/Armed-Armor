@@ -17,16 +17,18 @@ var _walkable_cells := []
 @onready var _unit_overlay: UnitOverlay = $UnitOverlay
 @onready var _unit_path: UnitPath = $UnitPath
 
-
 func _ready() -> void:
 	_reinitialize()
-
+	##$AAUnit.on_close_pressed.connect(self.close_pressed())
 
 func _unhandled_input(event: InputEvent) -> void:
 	if _active_unit and event.is_action_pressed("ui_cancel"):
 		_deselect_active_unit()
 		_clear_active_unit()
-
+		
+func close_pressed():
+	_deselect_active_unit()
+	_clear_active_unit()
 
 func _get_configuration_warning() -> String:
 	var warning := ""
@@ -100,7 +102,7 @@ func _move_active_unit(new_cell: Vector2) -> void:
 	await _active_unit.walk_finished
 	_clear_active_unit()
 
-
+## should be modified to only draw cells and path if move button is pressed
 ## Selects the unit in the `cell` if there's one there.
 ## Sets it as the `_active_unit` and draws its walkable cells and interactive move path. 
 func _select_unit(cell: Vector2) -> void:
@@ -109,6 +111,9 @@ func _select_unit(cell: Vector2) -> void:
 
 	_active_unit = _units[cell]
 	_active_unit.is_selected = true
+	
+	## Actually starts movement code, move this to new function after figuring out signal connections
+	
 	_walkable_cells = get_walkable_cells(_active_unit)
 	_unit_overlay.draw(_walkable_cells)
 	_unit_path.initialize(_walkable_cells)
@@ -139,3 +144,5 @@ func _on_Cursor_accept_pressed(cell: Vector2) -> void:
 func _on_Cursor_moved(new_cell: Vector2) -> void:
 	if _active_unit and _active_unit.is_selected:
 		_unit_path.draw(_active_unit.cell, new_cell)
+		
+		## Handles the move button press event for the active unit.

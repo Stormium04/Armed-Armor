@@ -40,6 +40,7 @@ var cell := Vector2.ZERO:
 		# When changing the cell's value, we don't want to allow coordinates outside
 		#	the grid, so we clamp them
 		cell = grid.grid_clamp(value)
+		
 ## Toggles the "selected" animation on the unit.
 var is_selected := false:
 	set(value):
@@ -76,19 +77,18 @@ func _ready() -> void:
 	if not Engine.is_editor_hint():
 		curve = Curve2D.new()
 
-
 func _process(delta: float) -> void:
-	if move_pressed == true:
-		_path_follow.progress += move_speed * delta
 
-		if _path_follow.progress_ratio >= 1.0:
-			_is_walking = false
-			# Setting this value to 0.0 causes a Zero Length Interval error
-			_path_follow.progress = 0.00001
-			position = grid.calculate_map_position(cell)
-			curve.clear_points()
-			emit_signal("walk_finished")
-			move_pressed = false
+	_path_follow.progress += move_speed * delta
+
+	if _path_follow.progress_ratio >= 1.0:
+		_is_walking = false
+		# Setting this value to 0.0 causes a Zero Length Interval error
+		_path_follow.progress = 0.00001
+		position = grid.calculate_map_position(cell)
+		curve.clear_points()
+		emit_signal("walk_finished")
+		move_pressed = false
 
 ## Starts walking along the `path`.
 ## `path` is an array of grid coordinates that the function converts to map coordinates.
@@ -103,13 +103,3 @@ func walk_along(path: PackedVector2Array) -> void:
 	_is_walking = true
 
 
-func _on_attack_pressed():
-	pass # Replace with function body.
-
-
-func _on_move_pressed():
-	move_pressed = true # Replace with function body.
-
-
-func _on_close_pressed():
-	is_selected = false # Replace with function body.
