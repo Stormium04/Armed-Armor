@@ -1,9 +1,9 @@
 [gd_scene load_steps=11 format=3 uid="uid://de53ukdqyusan"]
 
 [ext_resource type="Texture2D" uid="uid://cocms0prufyqi" path="res://Background/grasslands.png" id="1"]
-[ext_resource type="Texture2D" uid="uid://bg7tsf0ovtxc1" path="res://Dirt Path.jpg" id="2_60sus"]
-[ext_resource type="Texture2D" uid="uid://coet66acdxv4g" path="res://IMG_6207.jpg" id="3_0xvil"]
-[ext_resource type="Texture2D" uid="uid://c385f5xxo8g1t" path="res://IMG_6207 - Copy.jpg" id="4_hh3wf"]
+[ext_resource type="Texture2D" uid="uid://bg7tsf0ovtxc1" path="res://Background/Dirt Path.jpg" id="2_60sus"]
+[ext_resource type="Texture2D" uid="uid://coet66acdxv4g" path="res://Background/IMG_6207.jpg" id="3_0xvil"]
+[ext_resource type="Texture2D" uid="uid://c385f5xxo8g1t" path="res://Background/IMG_6207 - Copy.jpg" id="4_hh3wf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5tkph"]
 texture = ExtResource("1")

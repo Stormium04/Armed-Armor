@@ -1,4 +1,3 @@
-res://AAUnits/AAUnit.gd
 res://Main.tscn
 res://TextureRect.gd
 res://GameBoard/Grid.tres
@@ -8,3 +7,4 @@ res://Background/Map.tscn
 res://UnitOverlay/UnitOverlay.tscn
 res://AAUnits/Unit.tscn
 res://AAGrid/Unit Path/UnitPath.tscn
+res://new/TestingRestructure.tscn

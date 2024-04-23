@@ -4,7 +4,7 @@
 [ext_resource type="Resource" uid="uid://cm00eac5a0nho" path="res://GameBoard/Grid.tres" id="2"]
 [ext_resource type="Texture2D" uid="uid://b5ghlcxjxmmgw" path="res://AAUnits/unit_shadow.svg" id="3"]
 [ext_resource type="PackedScene" uid="uid://dpa40x4ibw7id" path="res://UnitOverlay/Menu.tscn" id="4_5tbmg"]
-[ext_resource type="Texture2D" uid="uid://bp1ybr7j66w1x" path="res://SniperUnit.png" id="4_8x6vk"]
+[ext_resource type="Texture2D" uid="uid://bp1ybr7j66w1x" path="res://AAUnits/SniperUnit.png" id="4_8x6vk"]
 
 [sub_resource type="Animation" id="1"]
 length = 0.001

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://don6rhlapjhye"
-path="res://.godot/imported/bear.png-1eb6314127ece74a9413fa053b22def1.ctex"
+uid="uid://bp1ybr7j66w1x"
+path="res://.godot/imported/SniperUnit.png-f86f7a5d316d277e12c595e7e57d220f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Units/bear.png"
-dest_files=["res://.godot/imported/bear.png-1eb6314127ece74a9413fa053b22def1.ctex"]
+source_file="res://AAUnits/SniperUnit.png"
+dest_files=["res://.godot/imported/SniperUnit.png-f86f7a5d316d277e12c595e7e57d220f.ctex"]
 
 [params]
 

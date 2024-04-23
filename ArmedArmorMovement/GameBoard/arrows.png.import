@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ceanoo0yxcj8i"
-path="res://.godot/imported/squirrel.png-6645ea16b33f8381a844b58ff8e24473.ctex"
+uid="uid://1357ndc06duk"
+path="res://.godot/imported/arrows.png-3a8ee62073994ece4ea191fc289b06b5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Units/squirrel.png"
-dest_files=["res://.godot/imported/squirrel.png-6645ea16b33f8381a844b58ff8e24473.ctex"]
+source_file="res://GameBoard/arrows.png"
+dest_files=["res://.godot/imported/arrows.png-3a8ee62073994ece4ea191fc289b06b5.ctex"]
 
 [params]
 

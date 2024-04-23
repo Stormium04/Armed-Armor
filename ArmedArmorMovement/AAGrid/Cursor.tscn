@@ -1,7 +1,8 @@
 [gd_scene load_steps=3 format=3 uid="uid://irxlrndabrlb"]
 
-[ext_resource type="Texture2D" uid="uid://bjitqkw36qnci" path="res://pngwing.com.png" id="1_uil6b"]
-[ext_resource type="Script" path="res://TextureRect.gd" id="2_c6sgc"]
+[ext_resource type="Texture2D" path="res://pngwing.com.png" id="1_uil6b"]
+[ext_resource type="Script" path="res://UI/TextureRect.gd" id="2_c6sgc"]
+
 
 [node name="Cursor" type="TextureRect"]
 offset_right = 40.0

@@ -1,53 +1,48 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1713840820
-AAArows.png::CompressedTexture2D::2094212232574574678::1713755039::1713755039::1::::<><>::
-ActionMenuTemp.png::CompressedTexture2D::4254070045684733592::1713755039::1713755039::1::::<><>::
-arrows.png::CompressedTexture2D::1884591854453933254::1713755039::1713755039::1::::<><>::
-arrows.svg::CompressedTexture2D::4758664585829825197::1713755039::1713755055::1::::<><>::
+::res://::1713891918
 Camera.gd::GDScript::-1::1713755039::0::1::::<>Camera2D<>::
-Cursor.tscn::PackedScene::598022218605633251::1713755039::0::1::::<><>::uid://bjitqkw36qnci::::res://pngwing.com.png<>res://TextureRect.gd
-Dirt Path.jpg::CompressedTexture2D::2874799902705852706::1713755039::1713755039::1::::<><>::
-icon.png::CompressedTexture2D::4800787463865256339::1713755039::1713755039::1::::<><>::
-IMG_6207 - Copy.jpg::CompressedTexture2D::6808085506183634087::1713755039::1713755039::1::::<><>::
-IMG_6207.jpg::CompressedTexture2D::5764953300128172764::1713755039::1713755039::1::::<><>::
-Main.tscn::PackedScene::2017446843201763343::1713816572::0::1::::<><>::uid://bv1ul1qynrdwd::::res://AAGrid/Cursor/Cursor.tscn<>res://Camera.gd<>uid://d4mhjq651egt::::res://AAUnits/Unit.tscn<>res://GameBoard/GameBoard.gd<>uid://cm00eac5a0nho::::res://GameBoard/Grid.tres<>uid://n825j345khoi::::res://UnitOverlay/UnitOverlay.tscn<>uid://dxyfefsgkgc4l::::res://AAGrid/Unit Path/UnitPath.tscn<>uid://bp1ybr7j66w1x::::res://SniperUnit.png<>uid://csxgml65145ab::::res://Samurai.png<>uid://de53ukdqyusan::::res://Background/Map.tscn
-Samurai.png::CompressedTexture2D::6084107599742387841::1713755039::1713755039::1::::<><>::
-SniperUnit.png::CompressedTexture2D::3494387096271724779::1713755039::1713755039::1::::<><>::
-TextureRect.gd::GDScript::-1::1713811535::0::1::::<>Node2D<>::
-::res://AAGrid/::1713755039
+Main.tscn::PackedScene::2017446843201763343::1713891855::0::1::::<><>::uid://bv1ul1qynrdwd::::res://AAGrid/Cursor/Cursor.tscn<>res://Camera.gd<>uid://d4mhjq651egt::::res://AAUnits/Unit.tscn<>res://GameBoard/GameBoard.gd<>uid://cm00eac5a0nho::::res://GameBoard/Grid.tres<>uid://n825j345khoi::::res://UnitOverlay/UnitOverlay.tscn<>uid://dxyfefsgkgc4l::::res://AAGrid/Unit Path/UnitPath.tscn<>uid://bp1ybr7j66w1x::::res://AAUnits/SniperUnit.png<>uid://csxgml65145ab::::res://AAUnits/Samurai.png<>uid://de53ukdqyusan::::res://Background/Map.tscn
+::res://AAGrid/::1713891914
 AAGrid.tres::Resource/Resource::5567897275879743860::1713755039::0::1::::<><>::res://GameBoard/Grid.gd
 AAMap.tscn::PackedScene::49085529403462322::1713755039::0::1::::<><>::
+Cursor.tscn::PackedScene::598022218605633251::1713891914::0::1::::<><>::res://pngwing.com.png<>res://UI/TextureRect.gd
 ::res://AAGrid/Cursor/::1713763685
 Cursor.gd::GDScript::-1::1713755039::0::1::::Cursor<>Node2D<>::
 cursor.png::CompressedTexture2D::3500678071688864504::1713755039::1713755039::1::::<><>::
 Cursor.tscn::PackedScene::3915295596718087763::1713763685::0::1::::<><>::res://AAGrid/Cursor/Cursor.gd<>uid://cm00eac5a0nho::::res://GameBoard/Grid.tres<>uid://bp40wk1ticocm::::res://AAGrid/Cursor/cursor.png
-::res://AAGrid/Unit Path/::1713763685
+::res://AAGrid/Unit Path/::1713891855
 ArmedArmorUnitPath.tres::TileSet::2834051158233651450::1713755039::0::1::::<><>::uid://43pmte6gft6e::::res://AAArows.png
 UnitPath.gd::GDScript::-1::1713755039::0::1::::UnitPath<>TileMap<>::
-UnitPath.tscn::PackedScene::8823461539700379773::1713763685::0::1::::<><>::uid://dqg14aj86so4a::::res://GameBoard/unit_path_tileset.tres<>res://AAGrid/Unit Path/UnitPath.gd<>uid://cm00eac5a0nho::::res://GameBoard/Grid.tres
-::res://AAUnits/::1713816572
-AAUnit.gd::GDScript::-1::1713811532::0::1::::AAUnit<>Path2D<>::
-Unit.tscn::PackedScene::271175089128999423::1713816572::0::1::::<><>::res://AAUnits/AAUnit.gd<>uid://cm00eac5a0nho::::res://GameBoard/Grid.tres<>uid://b5ghlcxjxmmgw::::res://AAUnits/unit_shadow.svg<>uid://dpa40x4ibw7id::::res://UnitOverlay/Menu.tscn<>uid://bp1ybr7j66w1x::::res://SniperUnit.png
+UnitPath.tscn::PackedScene::8823461539700379773::1713891855::0::1::::<><>::uid://dqg14aj86so4a::::res://GameBoard/unit_path_tileset.tres<>res://AAGrid/Unit Path/UnitPath.gd<>uid://cm00eac5a0nho::::res://GameBoard/Grid.tres
+::res://AAUnits/::1713891855
+AAUnit.gd::GDScript::-1::1713840886::0::1::::AAUnit<>Path2D<>::
+Samurai.png::CompressedTexture2D::6084107599742387841::1713755039::1713891793::1::::<><>::
+SniperUnit.png::CompressedTexture2D::3494387096271724779::1713755039::1713891793::1::::<><>::
+Unit.tscn::PackedScene::271175089128999423::1713891855::0::1::::<><>::res://AAUnits/AAUnit.gd<>uid://cm00eac5a0nho::::res://GameBoard/Grid.tres<>uid://b5ghlcxjxmmgw::::res://AAUnits/unit_shadow.svg<>uid://dpa40x4ibw7id::::res://UnitOverlay/Menu.tscn<>uid://bp1ybr7j66w1x::::res://AAUnits/SniperUnit.png
 unit_shadow.svg::CompressedTexture2D::4504917063058092482::1713755039::1713755055::1::::<><>::
 unit_sniper.png::CompressedTexture2D::1577197875424866598::1713755039::1713755039::1::::<><>::
-::res://Background/::1713816572
+::res://Background/::1713891855
+Dirt Path.jpg::CompressedTexture2D::2874799902705852706::1713755039::1713891786::1::::<><>::
 grasslands.png::CompressedTexture2D::5760376019085434320::1713755039::1713755039::1::::<><>::
-Map.tscn::PackedScene::7503685080556545333::1713816572::0::1::::<><>::uid://cocms0prufyqi::::res://Background/grasslands.png<>uid://bg7tsf0ovtxc1::::res://Dirt Path.jpg<>uid://coet66acdxv4g::::res://IMG_6207.jpg<>uid://c385f5xxo8g1t::::res://IMG_6207 - Copy.jpg
-::res://GameBoard/::1713816559
+icon.png::CompressedTexture2D::4800787463865256339::1713755039::1713891786::1::::<><>::
+IMG_6207 - Copy.jpg::CompressedTexture2D::6808085506183634087::1713755039::1713891786::1::::<><>::
+IMG_6207.jpg::CompressedTexture2D::5764953300128172764::1713755039::1713891786::1::::<><>::
+Map.tscn::PackedScene::7503685080556545333::1713891855::0::1::::<><>::uid://cocms0prufyqi::::res://Background/grasslands.png<>uid://bg7tsf0ovtxc1::::res://Background/Dirt Path.jpg<>uid://coet66acdxv4g::::res://Background/IMG_6207.jpg<>uid://c385f5xxo8g1t::::res://Background/IMG_6207 - Copy.jpg
+::res://GameBoard/::1713891880
+arrows.png::CompressedTexture2D::1884591854453933254::1713755039::1713891875::1::::<><>::
 GameBoard.gd::GDScript::-1::1713816559::0::1::::GameBoard<>Node2D<>::
 Grid.gd::GDScript::-1::1713755039::0::1::::Grid<>Resource<>::
-Grid.tres::Resource/Grid::5668242007342535736::1713811535::0::1::::<><>::res://GameBoard/Grid.gd
+Grid.tres::Resource/Grid::5668242007342535736::1713890790::0::1::::<><>::res://GameBoard/Grid.gd
 Pathfinder.gd::GDScript::-1::1713755039::0::1::::PathFinder<>Resource<>::
-unit_path_tileset.tres::TileSet::8296300261092109810::1713811535::0::1::::<><>::uid://1357ndc06duk::::res://arrows.png
-::res://UI/::1713755039
-ActionMenu.tscn::PackedScene::4529304431713252::1713755039::0::1::::<><>::uid://b1ux6aofq23ui::::res://ActionMenuTemp.png
-::res://UnitOverlay/::1713816572
-Menu.tscn::PackedScene::8213901396489741843::1713763685::0::1::::<><>::res://TextureRect.gd
+unit_path_tileset.tres::TileSet::8296300261092109810::1713891875::0::1::::<><>::uid://1357ndc06duk::::res://GameBoard/arrows.png
+::res://new/::1713891759
+::res://UI/::1713891918
+ActionMenu.tscn::PackedScene::4529304431713252::1713891918::0::1::::<><>::uid://b1ux6aofq23ui::::res://UI/ActionMenuTemp.png
+ActionMenuTemp.png::CompressedTexture2D::4254070045684733592::1713755039::1713891918::1::::<><>::
+TextureRect.gd::GDScript::-1::1713890790::0::1::::<>Node2D<>::
+::res://UnitOverlay/::1713891914
+Menu.tscn::PackedScene::8213901396489741843::1713891914::0::1::::<><>::res://UI/TextureRect.gd
 tileset_unit_overlay.svg::CompressedTexture2D::2430363315898339962::1713755039::1713755055::1::::<><>::
 UnitOverlay.gd::GDScript::-1::1713755039::0::1::::UnitOverlay<>TileMap<>::
-UnitOverlay.tscn::PackedScene::982272883123028944::1713816572::0::1::::<><>::uid://tddcd1j7i8lr::::res://UnitOverlay/unit_overlay_tileset.tres<>res://UnitOverlay/UnitOverlay.gd
-unit_overlay_tileset.tres::TileSet::1339967083137903595::1713811535::0::1::::<><>::uid://bavjy1odiaew5::::res://UnitOverlay/tileset_unit_overlay.svg
-::res://Units/::1713755039
-bear.png::CompressedTexture2D::8170655742763384520::1713755039::1713755039::1::::<><>::
-bugcat.png::CompressedTexture2D::1674859814782659197::1713755039::1713755039::1::::<><>::
-squirrel.png::CompressedTexture2D::5054411839027252686::1713755039::1713755039::1::::<><>::
+UnitOverlay.tscn::PackedScene::982272883123028944::1713891855::0::1::::<><>::uid://tddcd1j7i8lr::::res://UnitOverlay/unit_overlay_tileset.tres<>res://UnitOverlay/UnitOverlay.gd
+unit_overlay_tileset.tres::TileSet::1339967083137903595::1713890790::0::1::::<><>::uid://bavjy1odiaew5::::res://UnitOverlay/tileset_unit_overlay.svg

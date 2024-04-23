@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://43pmte6gft6e"
-path="res://.godot/imported/AAArows.png-bb3dc37a21ff3d0ad8c0cdfbc23e196c.ctex"
+uid="uid://cansjd7oqbysh"
+path="res://.godot/imported/icon.png-4eaa877862a0cfe00bc0547189b6ed40.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AAArows.png"
-dest_files=["res://.godot/imported/AAArows.png-bb3dc37a21ff3d0ad8c0cdfbc23e196c.ctex"]
+source_file="res://Background/icon.png"
+dest_files=["res://.godot/imported/icon.png-4eaa877862a0cfe00bc0547189b6ed40.ctex"]
 
 [params]
 
