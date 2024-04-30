@@ -1,0 +1,50 @@
+[gd_scene load_steps=6 format=3 uid="uid://b3f5wrr1cecyb"]
+
+[ext_resource type="PackedScene" uid="uid://g3p4rg3n27e3" path="res://Battle/battle.tscn" id="1_afkeu"]
+[ext_resource type="Script" path="res://Battle/player_group.gd" id="1_o6vgw"]
+[ext_resource type="Texture2D" uid="uid://ckfr0reum1r87" path="res://Textures and the like/sd-gundam-chibi-gundam-evolve-bandai-rx-78-gundam-sd-76a0d59d5a893f68386fb1e19c396e59.png" id="2_65fim"]
+[ext_resource type="Texture2D" uid="uid://dwope0g8w3cv6" path="res://Textures and the like/sd-gundam-mecha-anime-super-deformed-anime-7373fd4d1c25b6cf0ea9440e619d0aac.png" id="3_yfd0n"]
+[ext_resource type="Texture2D" uid="uid://bbhikqlfmio4w" path="res://Textures and the like/sd-gundam-chibi-mobile-suit-crossbone-gundam-mecha-chibi-9bde01e3385adad42dea82c2bf0c8e4e.png" id="4_hbs7n"]
+
+[node name="Player Group" type="Node2D"]
+script = ExtResource("1_o6vgw")
+
+[node name="Character" parent="." instance=ExtResource("1_afkeu")]
+
+[node name="Sprite2D" parent="Character" index="0"]
+position = Vector2(784, 131)
+texture = ExtResource("2_65fim")
+
+[node name="ProgressBar" parent="Character" index="2"]
+offset_left = 685.0
+offset_top = 216.0
+offset_right = 874.0
+offset_bottom = 250.0
+
+[node name="Character3" parent="." instance=ExtResource("1_afkeu")]
+
+[node name="Sprite2D" parent="Character3" index="0"]
+position = Vector2(789, 137)
+texture = ExtResource("3_yfd0n")
+
+[node name="ProgressBar" parent="Character3" index="2"]
+offset_left = 683.0
+offset_top = 215.0
+offset_right = 872.0
+offset_bottom = 249.0
+
+[node name="Character2" parent="." instance=ExtResource("1_afkeu")]
+
+[node name="Sprite2D" parent="Character2" index="0"]
+position = Vector2(798, 131)
+texture = ExtResource("4_hbs7n")
+
+[node name="ProgressBar" parent="Character2" index="2"]
+offset_left = 685.0
+offset_top = 214.0
+offset_right = 874.0
+offset_bottom = 248.0
+
+[editable path="Character"]
+[editable path="Character3"]
+[editable path="Character2"]
